@@ -6,10 +6,17 @@ def fibonacci(n)
 nums = (3..n).to_a
 arr = [1, 1]
 
+if n == 1
+  1
+elsif n == 2
+  1
+else
 nums.each do |num|
   arr << (arr[-2] + arr[-1])
 end
-arr
+arr.last
+end
+
 end
 
 
