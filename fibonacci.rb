@@ -3,7 +3,14 @@ require 'pry-byebug'
 # but you may remove it if you like.
 
 def fibonacci(n)
-  # your code here :)
+nums = (3..n).to_a
+arr = [1, 1]
+
+nums.each do |num|
+  arr << (arr[-2] + arr[-1])
 end
+arr
+end
+
 
 Pry.start
